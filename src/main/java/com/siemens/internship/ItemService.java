@@ -1,5 +1,8 @@
 package com.siemens.internship;
 
+import com.siemens.internship.exception.DataProcessingException;
+import com.siemens.internship.exception.ResourceNotFoundException;
+import com.siemens.internship.model.Item;
 import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -101,7 +104,7 @@ public class ItemService {
             Thread.sleep(100);
 
             Optional<Item> itemOptional = itemRepository.findById(id);
-            if (!itemOptional.isPresent()) {
+            if (itemOptional.isEmpty()) {
                 return null; // Item not found, cannot process
             }
 

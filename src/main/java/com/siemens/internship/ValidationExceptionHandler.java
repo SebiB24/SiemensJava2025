@@ -1,5 +1,7 @@
 package com.siemens.internship;
 
+import com.siemens.internship.exception.ResourceNotFoundException;
+import com.siemens.internship.model.ErrorResponse;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

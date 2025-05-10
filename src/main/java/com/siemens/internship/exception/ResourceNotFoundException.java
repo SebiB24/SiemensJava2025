@@ -1,4 +1,4 @@
-package com.siemens.internship;
+package com.siemens.internship.exception;
 
 public class ResourceNotFoundException extends RuntimeException {
     public ResourceNotFoundException(String message) {

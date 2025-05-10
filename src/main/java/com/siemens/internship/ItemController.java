@@ -1,5 +1,7 @@
 package com.siemens.internship;
 
+import com.siemens.internship.exception.ResourceNotFoundException;
+import com.siemens.internship.model.Item;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -7,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.concurrent.CompletableFuture;
 
 // Added spring-boot-starter-validation dependency in pom for the validations to work

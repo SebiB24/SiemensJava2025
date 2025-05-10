@@ -1,4 +1,4 @@
-package com.siemens.internship;
+package com.siemens.internship.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
