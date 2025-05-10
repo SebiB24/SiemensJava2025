@@ -3,5 +3,8 @@ Content-Type: application/json
 
 {
   "name": "Test Item",
-  "price": 10.5
+  "description": "Sample description",
+  "status": "NEW",
+  "email": "johnPork@gmail.com"
 }
+
